@@ -1,0 +1,9 @@
+.homeProducts {
+    padding: 64px 0;
+
+    .homeProducts__tabContent {
+        &__col {
+            margin-top: 32px;
+        }
+    }
+}

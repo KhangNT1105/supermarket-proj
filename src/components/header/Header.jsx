@@ -13,7 +13,8 @@ import {
   Collapse,
   NavLink,
 } from 'reactstrap';
-
+import './Header.scss';
+import logo from '../../assets/images/logo.png';
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -24,7 +25,9 @@ function Header() {
       <div className='header__wrapper container'>
         <div>
           <Navbar color='light' expand='md' light>
-            <NavbarBrand href='/'>Logo</NavbarBrand>
+            <NavbarBrand href='/' className='header__logo'>
+              <img src={logo} alt='logo' />
+            </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse navbar isOpen={isOpen}>
               <Nav className='me-auto' navbar>
